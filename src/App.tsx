@@ -1,5 +1,3 @@
-// src/App.tsx
-
 import { useState, useContext } from 'react';
 import { Incident } from './types/Incident';
 import { Container, Typography, Stack, Box, IconButton } from '@mui/material';

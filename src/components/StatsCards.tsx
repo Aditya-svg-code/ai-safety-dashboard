@@ -1,5 +1,4 @@
-// src/components/StatsCards.tsx
-import { Card, CardContent, Typography, Grid } from '@mui/material';
+import { Card, CardContent, Typography, Stack, Box } from '@mui/material';
 import severityColors from '../utils/severityColors';
 import { Incident } from '../types/Incident';
 
@@ -17,12 +16,27 @@ function StatsCards({ incidents }: { incidents: Incident[] }) {
     ];
 
     return (
-        <Grid container spacing={3} justifyContent="center" textAlign="center">
+        <Stack
+            direction="row"
+            flexWrap="wrap"
+            justifyContent="center"
+            spacing={3}
+            textAlign="center"
+        >
             {stats.map((stat, idx) => (
-                <Grid item xs={12} sm={6} md={3} key={idx} display="flex" justifyContent="center">
+                <Box
+                    key={idx}
+                    sx={{
+                        flex: '1 1 200px',
+                        maxWidth: '250px',
+                        display: 'flex',
+                        justifyContent: 'center'
+                    }}
+                >
                     <Card
                         variant="outlined"
                         sx={{
+                            width: '100%',
                             bgcolor: 'background.paper',
                             borderRadius: 3,
                             boxShadow: 2,
@@ -40,9 +54,9 @@ function StatsCards({ incidents }: { incidents: Incident[] }) {
                             </Typography>
                         </CardContent>
                     </Card>
-                </Grid>
+                </Box>
             ))}
-        </Grid>
+        </Stack>
     );
 }
 
