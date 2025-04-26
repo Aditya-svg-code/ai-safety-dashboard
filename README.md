@@ -1,5 +1,8 @@
 # AI Safety Incident Dashboard
 
+### Deployed
+Link: https://ai-safety-dashboard-inky.vercel.app/
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
