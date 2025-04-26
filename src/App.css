@@ -1,0 +1,72 @@
+/* Base dark mode styles */
+body.dark {
+  background-color: #121212;
+  /* dark background */
+  color: #e0e0e0;
+  /* soft white text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cards (incident boxes) */
+.dark .card {
+  background-color: #1e1e1e;
+  /* soft dark */
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Card hover effect */
+.dark .card:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.02);
+}
+
+/* Input fields and textareas */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Form button */
+.dark button {
+  background-color: #3a86ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover */
+.dark button:hover {
+  background-color: #2f6fd3;
+  transform: scale(1.05);
+}
+
+/* Filter/Sort dropdowns */
+.dark .filter-dropdown,
+.dark .sort-dropdown {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+/* Icon colors (edit/delete) */
+.dark .icon {
+  color: #bbbbbb;
+  transition: color 0.3s;
+}
+
+.dark .icon:hover {
+  color: #ffffff;
+}
